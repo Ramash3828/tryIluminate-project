@@ -2,4 +2,52 @@
 	.page-width {
 		width: 90%;
 	}
+	/* Hero section start */
+	.hero {
+		background-color: transparent;
+	}
+	.hero__content {
+		flex-direction: column;
+	}
+	.hero__img-box {
+		display: none;
+	}
+	.hero__details {
+		/* background-color: #000; */
+		max-width: 100%;
+		padding: 0;
+	}
+	.hero__mobile-img {
+		display: block;
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: brightness(0.5);
+	}
+
+	.hero__title-box {
+		margin-top: 100px;
+	}
+	.hero__top-title {
+		font-size: 85px;
+		top: -50px;
+	}
+	.hero__title {
+		font-size: 130px;
+	}
+
+	.hero__item-box {
+		text-align: center;
+		padding-left: 0;
+	}
+	.hero__btn {
+		font-size: 24px;
+		/* padding: 12px 21px; */
+	}
+	.hero__user {
+		margin-bottom: 22px;
+	}
+	/* Hero section end */
 }
