@@ -123,5 +123,19 @@
 	}
 	/* All collection section end */
 	/* Icon with text start */
+	.icon-with-text {
+		padding: 31px 0 21px;
+		background-color: #f5f5f5;
+	}
+
+	.icon-with-text__title {
+		font-size: 19px;
+		line-height: 23px;
+		margin-bottom: 10px;
+	}
+	.icon-with-text__content {
+		flex-direction: column;
+		gap: 13px;
+	}
 	/* Icon with text end */
 }
