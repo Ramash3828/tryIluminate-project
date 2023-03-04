@@ -547,3 +547,37 @@ p {
 	opacity: 0.8;
 }
 /* News Letter section end */
+/* Instagram section start */
+.instagram {
+	padding: 80px 0;
+}
+.instagram__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	margin-bottom: 50px;
+}
+.instagram__item {
+	flex: 1;
+}
+.instagram__item a {
+	display: block;
+}
+.instagram__item a img {
+	width: 100%;
+	transition: all 0.3s ease;
+}
+.instagram__item a:hover img {
+	transform: translateY(-10px);
+}
+.instagram__title {
+	margin-bottom: 27px;
+}
+.btn-box {
+	text-align: center;
+}
+.instagram__btn {
+	padding: 15.5px 50px;
+}
+/* Instagram section end */

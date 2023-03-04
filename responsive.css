@@ -185,4 +185,20 @@
 		font-size: 24px;
 	}
 	/* News Letter section end */
+	/* Instagram section start */
+	.instagram {
+		padding: 50px 0;
+	}
+	.instagram__title {
+		margin-bottom: 24px;
+		margin-bottom: 9px;
+	}
+	.instagram__content {
+		margin-bottom: 17px;
+	}
+	.instagram__btn {
+		padding: 15.5px 50px;
+		width: 100%;
+	}
+	/* Instagram section end */
 }
