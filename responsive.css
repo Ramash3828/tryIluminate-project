@@ -2,6 +2,15 @@
 	.page-width {
 		width: 90%;
 	}
+	h2 {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	h3 {
+		font-size: 14px;
+		margin-bottom: 0;
+		line-height: 14px;
+	}
 	/* Hero section start */
 	.hero {
 		background-color: transparent;
@@ -52,9 +61,16 @@
 	/* Hero section end */
 
 	/* Collection section start */
-	/* .collections__content {
-		grid-template-columns: 1fr;
-		gap: 30px;
+	.collections {
+		padding: 50px 0;
+	}
+	/* .collections__subtiitle {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+	.collections__heading {
+		font-size: 24px;
+		margin-bottom: 20px;
 	} */
 	.collections__regular-price,
 	.collections__old-price {
@@ -85,4 +101,27 @@
 		font-size: 18px;
 	}
 	/* Review section end */
+	/* All collection section start */
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.all-collections {
+		padding: 40px 0;
+	}
+	.all-collections__heading {
+		margin-bottom: 20px;
+	}
+	.all-collections__title {
+		font-size: 16px;
+	}
+
+	.slick-track {
+		margin-left: 40px;
+	}
+	/* All collection section end */
+	/* Icon with text start */
+	/* Icon with text end */
 }

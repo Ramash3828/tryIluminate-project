@@ -12,7 +12,7 @@ $(document).ready(function () {
 function runSlider() {
 	$(document).ready(function () {
 		$(".collection-slider").slick({
-			dots: true,
+			dots: false,
 			slidesToShow: 1.25,
 			slidesToScroll: 1,
 			responsive: [
@@ -31,4 +31,36 @@ function runSlider() {
 		});
 	});
 }
-runSlider();
+// Allcollection Slider
+$(".all-collections__slider").slick({
+	dots: false,
+	infinite: false,
+	speed: 300,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 2.25,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: false,
+			},
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2.25,
+				slidesToScroll: 1,
+			},
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2.25,
+				slidesToScroll: 1,
+			},
+		},
+	],
+});
