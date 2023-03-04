@@ -50,4 +50,28 @@
 		margin-bottom: 22px;
 	}
 	/* Hero section end */
+
+	/* Collection section start */
+	/* .collections__content {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	} */
+	.collections__regular-price,
+	.collections__old-price {
+		font-size: 18px;
+	}
+	.collections__btn {
+		padding: 7px 18px;
+		font-size: 16px;
+	}
+	.slick-slider {
+		margin: 0 -15px;
+	}
+	.slick-slide {
+		padding: 10px;
+	}
+
+	/* Collection section end */
+	/* Review section start */
+	/* Review section end */
 }
