@@ -73,5 +73,16 @@
 
 	/* Collection section end */
 	/* Review section start */
+	.review__content-box {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.review__content {
+		flex-direction: column;
+		gap: 5px;
+	}
+	.review__status {
+		font-size: 18px;
+	}
 	/* Review section end */
 }
