@@ -59,6 +59,17 @@
 		margin-bottom: 22px;
 	}
 	/* Hero section end */
+	/* Featured section start */
+	.featured-brand__content {
+		flex-direction: column;
+	}
+	.featured-brand__logo-box {
+		justify-content: center;
+		gap: 5px;
+		flex-wrap: wrap;
+	}
+
+	/* Featured section end */
 
 	/* Collection section start */
 	.collections {
