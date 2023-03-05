@@ -666,3 +666,48 @@ p {
 	text-transform: uppercase;
 }
 /* Footer section end */
+/* Video section start */
+.video {
+	padding: 38px 0;
+}
+
+.video__title {
+	margin-bottom: 20px;
+}
+
+/* .video__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+} */
+.video__box {
+	position: relative;
+	flex: 1;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.video__box > img {
+	width: 100%;
+}
+.video__icon-box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/* height: 70px; */
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.104), rgba(0, 0, 0, 0.349));
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.video__icon-box > a {
+	width: 50px;
+	height: 50px;
+}
+.video__name {
+	color: #fff;
+	font-size: 12px;
+	padding: 10px;
+}
+/* Video section end */
