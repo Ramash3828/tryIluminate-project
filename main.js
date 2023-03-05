@@ -1,3 +1,16 @@
+// Humbrger Menu -----------
+const menu = document.querySelector(".nav__menu-content-mobile");
+const closeBtn = document.querySelector(".close-btn");
+const toggleBtn = document.querySelector(".toggle-btn");
+console.log(menu, closeBtn, toggleBtn);
+closeBtn.addEventListener("click", () => {
+	menu.style.transform = `translateX(-100%)`;
+});
+toggleBtn.addEventListener("click", () => {
+	menu.style.transform = `translateX(0)`;
+});
+
+// Window Resize---
 $(document).ready(function () {
 	$(window).resize(function () {
 		if ($(window).width() < 768) {

@@ -69,6 +69,80 @@ p {
 	opacity: 0.8;
 }
 
+/* Menu bar start */
+.nav {
+	background-color: #fff;
+	padding: 20px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 9;
+}
+.nav__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav__logo-box {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.close-btn,
+.toggle-btn {
+	cursor: pointer;
+	display: none;
+}
+.nav__menu-content-mobile {
+	display: none;
+}
+.logo {
+	max-width: 152px;
+	max-height: 20px;
+}
+
+.nav__bar {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.nav__link {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: #262626;
+	transition: all 0.3s ease;
+}
+.nav__link:hover {
+	color: black;
+	font-weight: 500;
+}
+
+.nav__icon-box {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.curency {
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	position: relative;
+}
+
+.curency::after {
+	position: absolute;
+	content: url("./images/flag-usa.svg");
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 22;
+}
+
+/* Menu bar end */
+
 /* Hero section start */
 .hero {
 	background-color: #000;
