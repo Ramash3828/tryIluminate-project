@@ -141,6 +141,7 @@
 	/* Featured section start */
 	.featured-brand__content {
 		flex-direction: column;
+		gap: 0;
 	}
 	.featured-brand__logo-box {
 		justify-content: center;
@@ -174,9 +175,9 @@
 		margin: 0 -15px;
 		overflow-x: hidden;
 	}
-	.slick-slide {
+	/* .slick-slide {
 		padding: 0 10px;
-	}
+	} */
 
 	/* Collection section end */
 	/* Review section start */
@@ -329,9 +330,18 @@
 	}
 	/* Footer section end */
 	/* Video section start */
+	.video__content {
+		display: none;
+	}
+	.video__content-mobile {
+		display: block;
+	}
 	.video__title,
 	.video__subheading {
 		margin-bottom: 8px;
+	}
+	.video__box .slick-slide {
+		margin-right: 0px;
 	}
 	/* Video section end */
 }
