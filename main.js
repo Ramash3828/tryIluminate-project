@@ -111,3 +111,41 @@ $(".video__content-mobile").slick({
 		},
 	],
 });
+
+// Main product section----
+$(".main-product__main-img-box").slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	fade: true,
+	asNavFor: ".slider-nav-small",
+});
+$(".main-product__small-img-box").slick({
+	slidesToShow: 6,
+	slidesToScroll: 1,
+	asNavFor: ".slider-nav-main",
+	dots: false,
+	// centerMode: true,
+	focusOnSelect: true,
+});
+
+// Counter Incrise Decrise---------
+const counterParent = document.querySelector(
+	".varient-quantity-box__quentity-item-box"
+);
+const value = document.querySelector(".count-value");
+let count = 1;
+
+counterParent.addEventListener("click", (e) => {
+	if (e.target.className == "plus") {
+		if (value.innerHTML < 10) {
+			count++;
+			value.innerHTML = count;
+		}
+	} else {
+		if (value.innerHTML > 1) {
+			count--;
+			value.innerHTML = count;
+		}
+	}
+});

@@ -344,4 +344,41 @@
 		margin-right: 0px;
 	}
 	/* Video section end */
+	/* Main product section start */
+	.main-product__content {
+		gap: 50px;
+		flex-direction: column;
+	}
+	.main-product__title {
+		font-size: 24px;
+		margin-bottom: 0;
+	}
+	.product-details-text {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.varient-quantity-box {
+		gap: 15px;
+	}
+	.varient-quantity-box__color-box {
+		flex: 1;
+	}
+	.offer-box__left {
+		padding-left: 17px;
+	}
+	.offer-box__right {
+		padding-left: 13px;
+	}
+	.offer-box {
+		margin-bottom: 17px;
+	}
+	.offer-box__option {
+		font-size: 23px;
+	}
+	.offer-box__label {
+		font-size: 15px;
+	}
+	/* Main product section end */
+	/* Works section start */
+	/* Works section end */
 }
