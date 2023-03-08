@@ -380,5 +380,30 @@
 	}
 	/* Main product section end */
 	/* Works section start */
+	.works__title {
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+	.works__subtilte {
+		font-size: 14px;
+	}
+	.works__content {
+		flex-direction: column;
+		gap: 38px;
+	}
+	.works__item-details {
+		max-width: 283.75px;
+		gap: 10px;
+		margin: 0 auto;
+	}
+	.works__heading {
+		font-size: 30px;
+	}
+	.works__subheading {
+		font-size: 18px;
+	}
+	.works__text {
+		font-size: 14px;
+	}
 	/* Works section end */
 }
