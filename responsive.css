@@ -406,4 +406,54 @@
 		font-size: 14px;
 	}
 	/* Works section end */
+	/* Description section start */
+	.description {
+		padding-top: 38px;
+		width: 100%;
+	}
+	.description__heading {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.description__text {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	/* Description section end */
+	/* Product Details section start */
+	.product-description {
+		padding: 38px 0;
+	}
+	.product-description__content {
+		flex-direction: column-reverse;
+		gap: 13px;
+	}
+	.product-description__title {
+		font-size: 18px;
+		margin-bottom: 11px;
+	}
+	.product-description__text {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	/* Product Details section end */
+	/* Innovation section start */
+	.innovation {
+		padding-bottom: 44px;
+	}
+	.innovation__title {
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 13px;
+		text-align: left;
+	}
+	.innovation__text {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 26px;
+	}
+	/* Innovation section end */
+
+	/* Shop Now section start */
+	/* Shop Now section end */
 }

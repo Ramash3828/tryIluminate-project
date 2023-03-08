@@ -113,20 +113,20 @@ $(".video__content-mobile").slick({
 });
 
 // Main product section----
-$(".main-product__main-img-box").slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: false,
-	fade: true,
-	asNavFor: ".slider-nav-small",
-});
+// $(".main-product__main-img-box").slick({
+// 	slidesToShow: 1,
+// 	slidesToScroll: 1,
+// 	arrows: false,
+// 	fade: true,
+// 	asNavFor: ".slider-nav-small",
+// });
 $(".main-product__small-img-box").slick({
 	slidesToShow: 6,
 	slidesToScroll: 1,
 	asNavFor: ".slider-nav-main",
 	dots: false,
 	// centerMode: true,
-	focusOnSelect: true,
+	// focusOnSelect: true,
 });
 
 // Counter Incrise Decrise---------
@@ -148,4 +148,25 @@ counterParent.addEventListener("click", (e) => {
 			value.innerHTML = count;
 		}
 	}
+});
+
+//Accrodion-------
+$(document).ready(function () {
+	//toggle the component with class accordion_body
+	$(".innovation__faq-heading").click(function () {
+		if ($(".innovation__faq-text").is(":visible")) {
+			$(".innovation__faq-text").slideUp(500);
+			$(".plusminus").text("+");
+			$(".innovation__faq-heading").removeClass("active");
+		}
+		if ($(this).next(".innovation__faq-text").is(":visible")) {
+			$(this).next(".innovation__faq-text").slideUp(500);
+			// $(this).children(".plusminus").text("+");
+			$(this).removeClass("active");
+		} else {
+			$(this).next(".innovation__faq-text").slideDown(500);
+			// $(this).children(".plusminus").text("-");
+			$(this).addClass("active");
+		}
+	});
 });
