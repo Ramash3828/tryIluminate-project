@@ -2,7 +2,7 @@
 const menu = document.querySelector(".nav__menu-content-mobile");
 const closeBtn = document.querySelector(".close-btn");
 const toggleBtn = document.querySelector(".toggle-btn");
-console.log(menu, closeBtn, toggleBtn);
+
 closeBtn.addEventListener("click", () => {
 	menu.style.transform = `translateX(-100%)`;
 });
@@ -112,21 +112,49 @@ $(".video__content-mobile").slick({
 	],
 });
 
-// Main product section----
-// $(".main-product__main-img-box").slick({
-// 	slidesToShow: 1,
-// 	slidesToScroll: 1,
-// 	arrows: false,
-// 	fade: true,
-// 	asNavFor: ".slider-nav-small",
-// });
-$(".main-product__small-img-box").slick({
-	slidesToShow: 6,
-	slidesToScroll: 1,
-	asNavFor: ".slider-nav-main",
-	dots: false,
-	// centerMode: true,
-	// focusOnSelect: true,
+$(document).ready(function () {
+	// Main product section----
+	// $(".main-product__main-img-box").slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	arrows: false,
+	// 	fade: true,
+	// 	asNavFor: ".slider-nav-small",
+	// });
+	$(".main-product__small-img-box").slick({
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		dots: false,
+		// centerMode: true,
+		// focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 600,
+				arrows: true,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 480,
+				arrows: true,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
 });
 
 // Counter Incrise Decrise---------
@@ -154,17 +182,17 @@ counterParent.addEventListener("click", (e) => {
 $(document).ready(function () {
 	//toggle the component with class accordion_body
 	$(".innovation__faq-heading").click(function () {
-		if ($(".innovation__faq-text").is(":visible")) {
-			$(".innovation__faq-text").slideUp(500);
+		if ($(".innovation__faq-details").is(":visible")) {
+			$(".innovation__faq-details").slideUp(500);
 			$(".plusminus").text("+");
 			$(".innovation__faq-heading").removeClass("active");
 		}
-		if ($(this).next(".innovation__faq-text").is(":visible")) {
-			$(this).next(".innovation__faq-text").slideUp(500);
+		if ($(this).next(".innovation__faq-details").is(":visible")) {
+			$(this).next(".innovation__faq-details").slideUp(500);
 			// $(this).children(".plusminus").text("+");
 			$(this).removeClass("active");
 		} else {
-			$(this).next(".innovation__faq-text").slideDown(500);
+			$(this).next(".innovation__faq-details").slideDown(500);
 			// $(this).children(".plusminus").text("-");
 			$(this).addClass("active");
 		}

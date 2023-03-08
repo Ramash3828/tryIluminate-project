@@ -857,6 +857,10 @@ p {
 	object-fit: cover;
 	height: inherit;
 }
+/* .main-product__small-img-box{
+	display: flex;
+
+} */
 .main-product__title {
 	text-align: left;
 	font-weight: 400;
@@ -1209,6 +1213,7 @@ p {
 	padding: 42px 0 45px;
 }
 .product-description__content {
+	margin-top: 42px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -1219,6 +1224,9 @@ p {
 }
 .product-description__details {
 	flex: 1;
+}
+.product-description__img {
+	width: 100%;
 }
 .product-description__title {
 	font-weight: 500;
@@ -1270,18 +1278,18 @@ p {
 	align-items: center;
 	justify-content: space-between;
 }
+.faq-mainus {
+	display: none;
+}
+.innovation__faq-heading.active .faq-mainus {
+	display: block;
+}
+.innovation__faq-heading.active .faq-plus {
+	display: none;
+}
 
-.innovation__faq-heading.active .faq-plus {
-	transition: transform 0.3s ease;
-}
-.innovation__faq-heading.active .faq-plus {
-	transform: rotate(-45deg);
-}
-.innovation__faq-text {
-	padding: 15px;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 22px;
+.innovation__faq-details {
+	padding-top: 19px;
 }
 /* Innovation section end */
 
