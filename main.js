@@ -114,19 +114,21 @@ $(".video__content-mobile").slick({
 
 $(document).ready(function () {
 	// Main product section----
-	// $(".main-product__main-img-box").slick({
-	// 	slidesToShow: 1,
-	// 	slidesToScroll: 1,
-	// 	arrows: false,
-	// 	fade: true,
-	// 	asNavFor: ".slider-nav-small",
-	// });
+	$(".main-product__main-img-box").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: ".main-product__small-img-box",
+	});
 	$(".main-product__small-img-box").slick({
 		slidesToShow: 6,
 		slidesToScroll: 1,
 		dots: false,
 		// centerMode: true,
-		// focusOnSelect: true,
+		focusOnSelect: true,
+		asNavFor: ".main-product__main-img-box",
+		infinite: false,
 		responsive: [
 			{
 				breakpoint: 1024,
